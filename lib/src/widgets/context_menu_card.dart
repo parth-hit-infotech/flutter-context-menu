@@ -18,9 +18,7 @@ class ContextMenuCard extends StatelessWidget {
   Widget build(BuildContext context) {
     Color shadowColor = Theme.of(context).textTheme.bodyText1?.color ?? Colors.black;
     BorderRadius radius = borderRadius ?? BorderRadius.circular(4);
-    return ConstrainedBox(
-      constraints: BoxConstraints(minWidth: 250),
-      child: ClipRRect(
+    return ClipRRect(
         borderRadius: radius,
         child: Container(
             padding: padding ?? EdgeInsets.symmetric(vertical: 5),
@@ -39,7 +37,6 @@ class ContextMenuCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: children,
             )),
-      ),
     );
   }
 }
