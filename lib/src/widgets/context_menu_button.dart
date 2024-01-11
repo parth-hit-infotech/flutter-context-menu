@@ -52,7 +52,6 @@ class _ContextMenuButtonState extends State<ContextMenuButton> {
           opacity: isDisabled ? style.disabledOpacity : 1,
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            width: double.infinity,
             color: showMouseOver ? style.hoverBgColor : style.bgColor,
             child: Row(
               mainAxisSize: MainAxisSize.min,
