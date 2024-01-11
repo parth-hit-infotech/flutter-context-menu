@@ -67,7 +67,6 @@ class _ContextMenuButtonState extends State<ContextMenuButton> {
                 /// Main Label
                 Text(config.label,
                     style: style.textStyle!.copyWith(color: showMouseOver ? style.hoverFgColor : style.fgColor)),
-                Spacer(),
 
                 /// Shortcut Label
                 if (config.shortcutLabel != null) ...[
